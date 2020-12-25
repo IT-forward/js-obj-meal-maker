@@ -29,7 +29,7 @@ In this project, you should use JavaScript **objects** and **iterators** to rand
 
 6. Now, we’re going to need another function which will allow us to get a random dish from a course on the menu, which will be necessary for generating a random meal.
 
-   Create a method inside the `menu` object called `.getRandomDishFromCourse()`. It will take in one parameter which is the `courseName`. As you may already assumed
+   Create a method inside the `menu` object called `.getRandomDishFromCourse()`. It will take in one parameter which is the `courseName`. As you may already assumed:
    1. It should get all dishes from appropriate `courseName` inside `_courses` property
    2. Randomly pick one of them
    3. Return it.
@@ -50,4 +50,4 @@ In this project, you should use JavaScript **objects** and **iterators** to rand
 
    Inside `index.js` add at least 3 dishes to each course (or more if you like!).
 
-9. Once your menu has items inside it, generate a meal by using the `.generateRandomMeal()` function on your menu, and save it to a variable called `meal`. Lastly, print out your `meal` variable to see what meal was generated for you. You can do so by running `node index` in the terminal.
+9. Once your menu has items inside it, generate a meal by using the `.generateRandomMeal()` function on your menu, and save it to a variable called `meal`. Lastly, print out your `meal` variable to see what meal was generated for you. You can do so by running `node index.js` in the terminal.
