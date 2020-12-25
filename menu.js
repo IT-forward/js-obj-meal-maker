@@ -14,29 +14,13 @@ const menu = {
       name: dishName,
       price: dishPrice
     };
-    switch(courseName){
-      case 'appetizers':
-        this._courses.appetizers.push(dish);
-        break;
-      case 'mains':
-        this._courses.mains.push(dish);
-        break;
-      case 'desserts':
-        this._courses.desserts.push(dish);
-        break;
-    }
+    
+    this._courses[courseName].push(dish);
   },
 
   getRandomDishFromCourse(courseName) {
-    
     let randomMealIndex = Math.floor(Math.random() * this._courses[courseName].length);
-    if(courseName === 'appetizers'){ 
-      return this._courses.appetizers[randomMealIndex];
-    } else if(courseName === 'mains'){
-      return this._courses.mains[randomMealIndex];
-    } else if(courseName === 'desserts'){
-      return this._courses.desserts[randomMealIndex];
-    }
+    return this._courses[courseName][randomMealIndex];
   },
 
   generateRandomMeal() {
