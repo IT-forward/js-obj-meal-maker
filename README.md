@@ -25,7 +25,7 @@ In this project, you should use JavaScript **objects** and **iterators** to rand
 
 5. The `.addDishToCourse()` method should create an object called dish which has a name and price which it gets from the parameters.
 
-The method should then push this dish object into the appropriate array in your `menu`‘s `_courses` object based on what `courseName` was passed in.
+   The method should then push this dish object into the appropriate array in your `menu`‘s `_courses` object based on what `courseName` was passed in.
 
 6. Now, we’re going to need another function which will allow us to get a random dish from a course on the menu, which will be necessary for generating a random meal.
 
