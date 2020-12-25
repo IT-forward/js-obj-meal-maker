@@ -1,9 +1,9 @@
 ## How to run and test?
 
-As previous [Rock, Paper, or Scissors task](https://github.com/IT-forward/js-fn-rock-paper-scissors) it uses `yarn` and `jest` testing framework so process is the same:
+As previous [Rock, Paper, or Scissors task](https://github.com/IT-forward/js-fn-rock-paper-scissors) it uses `yarn` and `jest` testing framework so the process is the same:
 
 1. `git clone` the repo.
-2. Create new branch with your name.
+2. Create new `branch` with your name and checkout.
 3. Run `yarn`.
 4. **To run tests:** run `yarn test` or `yarn watch` depending on your preference.
 
@@ -21,7 +21,7 @@ In this project, you should use JavaScript **objects** and **iterators** to rand
 
 4. Inside the `menu` object, we are going to create a method called `.addDishToCourse()` which will be used to add a new dish to the specified course on the menu.
 
-The method should take in three parameters: the `courseName`, the `dishName`, and the `dishPrice`.
+   The method should take in three parameters: the `courseName`, the `dishName`, and the `dishPrice`.
 
 5. The `.addDishToCourse()` method should create an object called dish which has a name and price which it gets from the parameters.
 
@@ -29,16 +29,15 @@ The method should then push this dish object into the appropriate array in your 
 
 6. Now, we’re going to need another function which will allow us to get a random dish from a course on the menu, which will be necessary for generating a random meal.
 
-Create a method inside the `menu` object called `.getRandomDishFromCourse()`. It will take in one parameter which is the `courseName`. As you may already assumed
+   Create a method inside the `menu` object called `.getRandomDishFromCourse()`. It will take in one parameter which is the `courseName`. As you may already assumed
+   1. It should get all dishes from appropriate `courseName` inside `_courses` property
+   2. Randomly pick one of them
+   3. Return it.
 
-1. It should get all dishes from appropriate `courseName` inside `_courses` property
-2. Randomly pick one of them
-3. Return it.
-
-4. Now that we have a way to get a random dish from a course, we can create a `.generateRandomMeal()` function which will automatically generate a three-course meal for us. The function doesn’t need to take any parameters.
-5. The function should create an `appetizer` variable which should be the result of calling the `.getRandomDishFromCourse()` method when we pass in an `appetizers` string to it.
-6. Create a `main` variable and `dessert` variable the same way you created the `appetizer` variable, but make sure to pass in the right course type.
-7. Calculates the total price and returns a string that contains the name of each of the dishes and the total price of the meal, formatted the following way:
+7. Now that we have a way to get a random dish from a course, we can create a `.generateRandomMeal()` function which will automatically generate a three-course meal for us. The function doesn’t need to take any parameters.
+   1. The function should create an `appetizer` variable which should be the result of calling the `.getRandomDishFromCourse()` method when we pass in an `appetizers` string to it.
+   2. Create a `main` variable and `dessert` variable the same way you created the `appetizer` variable, but make sure to pass in the right course type.
+   3. Calculates the total price and returns a string that contains the name of each of the dishes and the total price of the meal, formatted the following way:
 
    ```
      {
@@ -49,6 +48,6 @@ Create a method inside the `menu` object called `.getRandomDishFromCourse()`. It
 
 8. Now that we’ve finished our menu, object, let’s use it to create a `menu` by adding some `appetizers`, `mains`, and `desserts` with the `.addDishToCourse()` function.
 
-Inside `index.js` add at least 3 dishes to each course (or more if you like!).
+   Inside `index.js` add at least 3 dishes to each course (or more if you like!).
 
 9. Once your menu has items inside it, generate a meal by using the `.generateRandomMeal()` function on your menu, and save it to a variable called `meal`. Lastly, print out your `meal` variable to see what meal was generated for you. You can do so by running `node index` in the terminal.
