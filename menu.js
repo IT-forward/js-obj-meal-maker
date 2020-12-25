@@ -1,5 +1,5 @@
 const menu = {
-  // TODO
+  _courses: {},
 };
 
 export default menu;
