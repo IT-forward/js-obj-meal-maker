@@ -19,6 +19,7 @@ describe("menu object", () => {
     });
 
     it("equal to _courses property", () => {
+      expect(menu.courses).toBeTruthy();
       expect(menu.courses).toEqual(menu._courses);
     });
   });
