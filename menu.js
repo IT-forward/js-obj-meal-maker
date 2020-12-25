@@ -1,5 +1,5 @@
 const menu = {
-  _courses: {},
+  _courses: {}, // test
 };
 
 export default menu;
