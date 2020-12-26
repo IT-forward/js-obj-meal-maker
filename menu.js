@@ -14,13 +14,14 @@ const menu = {
       name: dishName,
       price: dishPrice
     };
-    
+
     this._courses[courseName].push(dish);
   },
 
   getRandomDishFromCourse(courseName) {
-    let randomMealIndex = Math.floor(Math.random() * this._courses[courseName].length);
-    return this._courses[courseName][randomMealIndex];
+    let courseDishes = this._courses[courseName];
+    let randomDishIndex = Math.floor(Math.random() * courseDishes.length);
+    return courseDishes[randomDishIndex];
   },
 
   generateRandomMeal() {
