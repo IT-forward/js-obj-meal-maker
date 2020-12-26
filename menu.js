@@ -29,8 +29,15 @@ const menu = {
     let main = this.getRandomDishFromCourse('mains');
     let dessert = this.getRandomDishFromCourse('desserts');
     
-    return `dishes: ${appetizer.name}, ${main.name}, ${dessert.name}, 
-    total: ${appetizer.price + main.price + dessert.price}`;
+    let dishNameArr = [appetizer.name, main.name, dessert.name];
+    let total = appetizer.price + main.price + dessert.price;
+
+    let obj = {
+      dishes: dishNameArr,
+      total: '$' + total
+    };
+
+    return obj;
   }
   
 };
