@@ -4,7 +4,7 @@ const menu = {
     mains: [],
     desserts: []
   },
-
+  
   get courses() {
     return this._courses;
   },
@@ -19,9 +19,10 @@ const menu = {
   },
 
   getRandomDishFromCourse(courseName) {
-    const randomIndex = Math.floor(Math.random() * this._courses[courseName].length);
+    const courseDishes = this._courses[courseName];
+    const randomIndex = Math.floor(Math.random() * courseDishes.length);
     
-    return this._courses[courseName][randomIndex];
+    return courseDishes[randomIndex];
   },
   
   generateRandomMeal() {
