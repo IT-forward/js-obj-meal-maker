@@ -1,5 +1,4 @@
 const menu = {
-  //task 1
   _courses: {
     appetizers: [],
     mains: [],
