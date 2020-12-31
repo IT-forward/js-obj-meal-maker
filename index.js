@@ -11,3 +11,7 @@ menu.addDishToCourse('desserts', 'Banana pudding', 5);
 menu.addDishToCourse('appetizers', 'Oven Baked Zucchini Chips ', 8);
 menu.addDishToCourse('mains', 'Creamy Tomato Pasta', 10);
 menu.addDishToCourse('desserts', 'Tiramisu', 4);
+
+const meal = menu.generateRandomMeal();
+console.log(meal);
+// console.log(menu.generateRandomMeal());
