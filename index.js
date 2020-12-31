@@ -22,4 +22,3 @@ menu.addDishToCourse('desserts', 'Turkish Baklava', 4);
 
 const meal = menu.generateRandomMeal();
 console.log(meal);
-// console.log(menu.generateRandomMeal());
