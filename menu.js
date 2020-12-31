@@ -23,11 +23,10 @@ const menu = {
     const appetizer = this.getRandomDishFromCourse('appetizers');
     const main = this.getRandomDishFromCourse('mains');
     const dessert = this.getRandomDishFromCourse('desserts');
-    const dishNameAndTotalPrice = {
+    return {
       dishes: [appetizer.name, main.name, dessert.name],
-      total: '$' + [appetizer.price + main.price + dessert.price]
-    }
-    return dishNameAndTotalPrice;
+      total: '$' + (appetizer.price + main.price + dessert.price)
+    };
   }
 };
 export default menu;
