@@ -1,8 +1,8 @@
 const menu = {
-    _courses : {
-      appetizers : [],
-      mains : [],
-      desserts : []
+      _courses : {
+        appetizers : [],
+        mains : [],
+        desserts : []
       },
       get courses() {
         return this._courses;
@@ -23,13 +23,10 @@ const menu = {
         let appetizer = this.getRandomDishFromCourse('appetizers');
         let main = this.getRandomDishFromCourse('mains');
         let dessert = this.getRandomDishFromCourse('desserts');
-        let dishes = [appetizer.name, main.name, dessert.name];
-        let total = appetizer.price + main.price + dessert.price;
-        let  object = {
-          dishes: dishes,
-          total: '$' + total
+        return {
+          dishes: [appetizer.name, main.name, dessert.name],
+          total: '$' + (appetizer.price + main.price + dessert.price)
         };
-        return object;
       }
     };
 export default menu;
