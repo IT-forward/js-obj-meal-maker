@@ -18,7 +18,7 @@ const menu = {
   getRandomDishFromCourse(courseName) {
     let dishes = this._courses[courseName];
     let randomIndex = Math.floor(Math.random() * dishes.length);
-      return dishes[randomIndex];
+    return dishes[randomIndex];
   },
   generateRandomMeal() {
     let appetizer = this.getRandomDishFromCourse('appetizers');
@@ -29,7 +29,6 @@ const menu = {
       total: '$' + `${appetizer.price + main.price + dessert.price}`
     };
   }
-    
 };
 
 export default menu;
